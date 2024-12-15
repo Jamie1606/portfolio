@@ -67,3 +67,27 @@
     @apply bg-background text-foreground;
   }
 }
+
+.hover-animation:hover::before {
+  content: "";
+  display: block;
+  background: #2a71d0;
+  width: 20px;
+  height: 300px;
+  position: absolute;
+  border-radius: inherit;
+  z-index: 0;
+  animation: rotate 1.7s linear forwards infinite;
+  transform-origin: center center;
+  transform: translate(0);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
