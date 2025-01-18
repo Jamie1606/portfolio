@@ -1,3 +1,4 @@
+import Footer from "@/components/shared/footer";
 import NavBar from "@/components/shared/nav-bar";
 
 interface PublicLayoutProps {
@@ -10,6 +11,7 @@ const PublicLayout = ({ children }: PublicLayoutProps) => {
       <div className="flex flex-col">
         <NavBar />
         <main className="w-full flex">{children}</main>
+        <Footer />
       </div>
     </div>
   );
