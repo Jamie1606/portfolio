@@ -1,18 +1,10 @@
 name: setup node
 description: "set up node.js, cache dependencies and install dependencies"
 
-on:
-  workflow_call:
-    outputs:
-      cache-hit:
-        description: "Indicates if dependencies were restored from cache"
-        value: ${{ jobs.setup.outputs.cache-hit }}
-
-jobs:
+runs:
+  using: "composite"
   setup:
     runs-on: ubuntu-latest
-    outputs:
-      cache-hit: ${{ steps.cache-dependencies.outputs.cache-hit }}
     steps:
       - uses: actions/checkout@v4
 
