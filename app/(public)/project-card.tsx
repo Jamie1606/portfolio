@@ -2,7 +2,6 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import ExternalLinkIcon from "@/icons/external-link";
 import GitHubIcon from "@/icons/github";
-import Image from "next/image";
 
 interface ProjectCardProps {
   title: string;
@@ -17,7 +16,7 @@ const ProjectCard = ({ title, description, image, technologies, githubLink, demo
   return (
     <Card className="w-[400px] rounded-xl">
       <CardHeader>
-        <Image className="mx-auto" src={image} alt={title} width={350} height={300} />
+        <img className="mx-auto" src={image} alt={title} width={350} height={300} />
       </CardHeader>
       <CardContent>
         <div className="flex flex-col w-full -mt-4 mx-auto">
