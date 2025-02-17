@@ -17,12 +17,12 @@ export default function NavBar() {
           </SheetTrigger>
           <SheetContent className="bg-[#F5F5F5] w-3/5">
             <div className="w-full h-screen flex flex-col justify-center items-center">
-              <Link href="/" className="text-[#333333] mb-10 text-lg">
+              {/* <Link href="/" className="text-[#333333] mb-10 text-lg">
                 About
               </Link>
               <Link href="/" className="text-[#333333] mb-10 text-lg">
                 Experience
-              </Link>
+              </Link> */}
               <Link href="/" className="text-[#333333] mb-10 text-lg">
                 Project
               </Link>
@@ -35,8 +35,8 @@ export default function NavBar() {
       </div>
       <div className="hidden md:flex items-center">
         <NavigationMenu>
-          <NavigationMenuList className="flex w-80 justify-between items-center text-[0.95rem] lg:w-96 lg:text-[1.07rem]">
-            <NavigationMenuItem>
+          <NavigationMenuList className="flex justify-end items-center gap-x-8 text-[0.95rem] lg:w-96 lg:text-[1.07rem]">
+            {/* <NavigationMenuItem>
               <Link href="/" legacyBehavior passHref>
                 <NavigationMenuLink className="text-[#333333] hover:text-[#2A71D0] hover:font-medium transition-all duration-200 hover:underline hover:underline-offset-8">About</NavigationMenuLink>
               </Link>
@@ -45,7 +45,7 @@ export default function NavBar() {
               <Link href="/" legacyBehavior passHref>
                 <NavigationMenuLink className="text-[#333333] hover:text-[#2A71D0] hover:font-medium transition-all duration-200 hover:underline hover:underline-offset-8">Experience</NavigationMenuLink>
               </Link>
-            </NavigationMenuItem>
+            </NavigationMenuItem> */}
             <NavigationMenuItem>
               <Link href="/" legacyBehavior passHref>
                 <NavigationMenuLink className="text-[#333333] hover:text-[#2A71D0] hover:font-medium transition-all duration-200 hover:underline hover:underline-offset-8">Project</NavigationMenuLink>

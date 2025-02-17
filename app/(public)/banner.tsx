@@ -27,7 +27,7 @@ const Banner = () => {
           <Link href="">
             <InstagramIcon width={22} height={22} fill="#FF0069" />
           </Link>
-          <Link href="">
+          <Link href="https://www.linkedin.com/in/zayyartun2025" target="_blank">
             <LinkedInIcon width={22} height={22} fill="#0A66C2" />
           </Link>
           <Link href="">
