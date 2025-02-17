@@ -2,13 +2,17 @@ name: setup node
 description: "set up node.js, cache dependencies and install dependencies"
 
 on:
-  push:
-    branches: ["main"]
+  workflow_call:
+    outputs:
+      cache-hit:
+        description: "Indicates if dependencies were restored from cache"
+        value: ${{ jobs.setup.outputs.cache-hit }}
 
 jobs:
-  build:
+  setup:
     runs-on: ubuntu-latest
-
+    outputs:
+      cache-hit: ${{ steps.cache-dependencies.outputs.cache-hit }}
     steps:
       - uses: actions/checkout@v4
 
@@ -19,8 +23,8 @@ jobs:
       - id: cache-dependencies
         uses: actions/cache@v3
         with:
-            path: node_modules
-            key: node-modules-${{ hashFiles('package-lock.json') }}
+          path: node_modules
+          key: node-modules-${{ hashFiles('package-lock.json') }}
 
       - if: steps.cache-dependencies.outputs.cache-hit != 'true'
         run: npm install
