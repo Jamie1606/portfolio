@@ -15,14 +15,22 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ title, description, image, technologies, githubLink, demoLink }: ProjectCardProps) => {
   return (
-    <Card className="w-[400px] rounded-xl">
+    <Card className="w-[85%] rounded-xl shadow-md xs:w-[400px]">
       <CardHeader>
-        <Image className="mx-auto" src={image} alt={title} width={350} height={300} />
+        {image ? (
+          <div className="w-full relative h-[190px] overflow-hidden xs:w-[350px]">
+            <Image className="mx-auto w-full h-full" src={image} alt={title} fill />
+          </div>
+        ) : (
+          <div className="w-full flex justify-center items-center border rounded-lg xs:w-[350px] h-[190px]">
+            <label className="text-slate-600">Image not available</label>
+          </div>
+        )}
       </CardHeader>
       <CardContent>
         <div className="flex flex-col w-full -mt-4 mx-auto">
-          <h2 className="mx-auto mt-3 text-lg font-semibold">{title}</h2>
-          <p className="mt-2 text-slate-600 text-sm text-justify">{description}</p>
+          <h2 className="mx-auto mt-3 text-subheading font-semibold">{title}</h2>
+          <p className="mt-2 text-slate-600 text-small text-justify line-clamp-3 text-ellipsis overflow-hidden h-20">{description}</p>
           <div className="flex w-full mt-3 justify-center items-center gap-x-4 gap-y-3 flex-wrap">
             {technologies.map((item, index) => (
               <Badge key={index}>{item}</Badge>

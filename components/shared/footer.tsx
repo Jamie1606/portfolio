@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="flex flex-col w-full py-8 mt-12 items-center">
-      <div className="flex w-full justify-center gap-x-6 mb-4">
+      <div className="gap-x-10 flex w-full justify-center md:gap-x-6 mb-4">
         <Link href="https://github.com/Jamie1606" target="_blank">
           <GitHubIcon width={22} height={22} fill="#181717" />
         </Link>
@@ -25,7 +25,7 @@ export default function Footer() {
           <GmailIcon width={22} height={22} fill="#EA4335" />
         </Link>
       </div>
-      <label className="text-slate-700">&copy;{new Date().getFullYear()} All rights reserved. Built by Zay Yar Tun</label>
+      <label className="text-sm text-slate-700 md:text-base">&copy;{new Date().getFullYear()} All rights reserved. Built by Zay Yar Tun</label>
     </footer>
   );
 }

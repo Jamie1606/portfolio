@@ -68,6 +68,10 @@
   }
 }
 
+:root, html, body {
+  scroll-behavior: smooth;
+}
+
 .hover-animation:hover::before {
   content: "";
   display: block;
