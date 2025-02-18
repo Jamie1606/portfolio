@@ -27,7 +27,7 @@ export default function NavBar() {
               <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
             </svg>
           </SheetTrigger>
-          <SheetContent className="bg-[#F5F5F5] w-4/5">
+          <SheetContent className="bg-[#F5F5F5] w-3/5">
             <div className="w-full h-screen flex flex-col justify-center items-center">
               {/* <Link href="/" className="text-[#333333] mb-10 text-lg">
                 About
@@ -35,6 +35,9 @@ export default function NavBar() {
               <Link href="/" className="text-[#333333] mb-10 text-lg">
                 Experience
               </Link> */}
+              <Link href="/" className="text-[#333333] mb-10 text-lg">
+                Home
+              </Link>
               <Link href="#" onClick={() => scrollTo("project")} className="text-[#333333] mb-10 text-lg">
                 Project
               </Link>
@@ -48,6 +51,11 @@ export default function NavBar() {
       <div className="hidden md:flex items-center">
         <NavigationMenu>
           <NavigationMenuList className="flex justify-end items-center gap-x-8 text-[0.95rem] lg:w-96 lg:text-[1.07rem]">
+            <NavigationMenuItem>
+              <Link href="/" legacyBehavior passHref>
+                <NavigationMenuLink className="text-[#333333] hover:text-[#2A71D0] hover:font-medium transition-all duration-200 hover:underline hover:underline-offset-8">Home</NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
             {/* <NavigationMenuItem>
               <Link href="/" legacyBehavior passHref>
                 <NavigationMenuLink className="text-[#333333] hover:text-[#2A71D0] hover:font-medium transition-all duration-200 hover:underline hover:underline-offset-8">About</NavigationMenuLink>

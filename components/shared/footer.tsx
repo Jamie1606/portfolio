@@ -12,16 +12,10 @@ export default function Footer() {
         <Link href="https://github.com/Jamie1606" target="_blank">
           <GitHubIcon width={22} height={22} fill="#181717" />
         </Link>
-        <Link href="">
-          <FacebookIcon width={22} height={22} fill="#0866FF" />
-        </Link>
-        <Link href="">
-          <InstagramIcon width={22} height={22} fill="#FF0069" />
-        </Link>
         <Link href="https://www.linkedin.com/in/zayyartun2025" target="_blank">
           <LinkedInIcon width={22} height={22} fill="#0A66C2" />
         </Link>
-        <Link href="">
+        <Link href="mailto:zyt.tharthar@gmail.com">
           <GmailIcon width={22} height={22} fill="#EA4335" />
         </Link>
       </div>
