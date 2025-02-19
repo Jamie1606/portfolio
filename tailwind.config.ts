@@ -14,7 +14,7 @@ const config = {
     },
     extend: {
       fontSize: {
-        heading: "clamp(1.7rem, 2.5vw, 2.5rem)",
+        heading: "clamp(1.6rem, 2.5vw, 2.2rem)",
         subheading: "clamp(1.15rem, 1.4vw, 1.8rem)",
         body: "clamp(1rem, 1.2vw, 1.5rem)",
         small: "clamp(0.9rem, 1.05vw, 1.1rem)"

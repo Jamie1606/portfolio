@@ -15,14 +15,14 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ title, description, image, technologies, githubLink, demoLink }: ProjectCardProps) => {
   return (
-    <Card className="w-[85%] rounded-xl shadow-md xs:w-[400px]">
+    <Card className="w-[85%] rounded-xl shadow-md xs:w-[380px] md:w-[350px] lg:w-[400px]">
       <CardHeader>
         {image ? (
-          <div className="w-full relative h-[190px] overflow-hidden xs:w-[350px]">
+          <div className="w-full relative h-[190px] overflow-hidden">
             <Image className="mx-auto w-full h-full" src={image} alt={title} fill />
           </div>
         ) : (
-          <div className="w-full flex justify-center items-center border rounded-lg xs:w-[350px] h-[190px]">
+          <div className="w-full flex justify-center items-center border rounded-lg h-[190px]">
             <label className="text-slate-600">Image not available</label>
           </div>
         )}

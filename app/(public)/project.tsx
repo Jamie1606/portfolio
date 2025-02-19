@@ -21,7 +21,7 @@ const Project = () => {
   return (
     <div id="project" className="mt-20 flex flex-col lg:mt-36 justify-center w-full">
       <label className="text-heading mb-8 text-center text-[#0A66C2] font-bold sm:mb-12">Latest Projects</label>
-      <div className="w-full gap-y-5 flex justify-center gap-x-12 flex-wrap lg:gap-y-8 max-w-[1400px]">
+      <div className="w-full gap-y-5 flex justify-center gap-x-12 flex-wrap md:gap-y-8 md:gap-x-8 max-w-[1400px]">
         {projects.map((item, index) => (
           <ProjectCard key={index} {...item} />
         ))}
