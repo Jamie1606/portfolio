@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Banner = () => {
   return (
-    <div className="flex flex-col mt-20 w-full px-6 mx-auto md:mt-52 md:w-[35rem] lg:w-[50rem] lg:px-0 lg:mt-40 xl:w-[60rem] 2xl:mt-56">
+    <div className="flex flex-col mt-16 w-full px-6 mx-auto md:mt-52 md:w-[35rem] lg:w-[50rem] lg:px-0 lg:mt-32 xl:w-[60rem] 2xl:mt-56">
       <label className="text-[#333333] mb-6 text-body md:mb-8 lg:mb-8">Hi, my name is</label>
       <label className="text-[#2A71D0] font-extrabold text-4xl md:text-5xl lg:text-6xl">Zay Yar Tun</label>
       <label className="text-[#000000] mt-7 max-w-full text-xl font-medium md:mt-8 md:max-w-[30rem] lg:max-w-[50rem] lg:text-2xl lg:mt-10">Final year student at Singapore Polytechnic</label>
