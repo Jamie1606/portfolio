@@ -10,7 +10,7 @@ const projects = [
 
   { title: "DailyHype", description: "This is an online clothing ecommerce platform, built by a team of five as a school project.", image: "", technologies: ["next.js", "postgresql", "node.js", "express.js", "redis", "tailwind css", "typescript", "github"], githubLink: "https://github.com/Jamie1606/daily-hype-old", demoLink: "" },
 
-  { title: "BookHaven", description: "This is an online book store featuring the latest books, built by a team of two for the school project.", image: "", technologies: ["java", "spring boot", "mysql", "tomcat", "github"], githubLink: "", demoLink: "" },
+  { title: "BookHaven", description: "This is an online book store featuring the latest books, built by a team of two for the school project.", image: "/projects/book-haven.png", technologies: ["java", "spring boot", "mysql", "tomcat", "github"], githubLink: "", demoLink: "http://ec2-52-220-122-200.ap-southeast-1.compute.amazonaws.com:8080/BookHavenNew/" },
 
   // { title: "Mooodify", description: "", image: "", technologies: ["next.js", "postgresql", "node.js", "express.js"], githubLink: "", demoLink: "" },
 
