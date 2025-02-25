@@ -29,8 +29,8 @@ const ProjectCard = ({ title, description, image, technologies, githubLink, demo
       </CardHeader>
       <CardContent>
         <div className="flex flex-col w-full -mt-4 mx-auto">
-          <h2 className="mx-auto mt-3 text-subheading font-semibold">{title}</h2>
-          <p className="mt-2 text-slate-600 text-small text-justify line-clamp-3 text-ellipsis overflow-hidden h-20" dangerouslySetInnerHTML={{ __html: description }}></p>
+          <h2 className="mx-auto mt-3 text-lg font-semibold md:text-xl">{title}</h2>
+          <p className="mt-2 text-slate-600 text-[15px] text-justify line-clamp-3 text-ellipsis overflow-hidden h-[70px]" dangerouslySetInnerHTML={{ __html: description }}></p>
           <div className="flex w-full mt-3 justify-center items-center gap-x-4 gap-y-3 flex-wrap">
             {technologies.map((item, index) => (
               <Badge key={index}>{item}</Badge>
