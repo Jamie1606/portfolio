@@ -14,7 +14,7 @@ const Banner = () => {
       <label className="text-[#000000] mt-7 max-w-full text-xl font-medium md:mt-8 md:max-w-[30rem] lg:max-w-[50rem] lg:text-2xl lg:mt-10">Final year student at Singapore Polytechnic</label>
       <label className="text-justify w-full text-[15px] text-[#333333] mt-10 max-w-[60rem] md:text-lg">Currently, I&apos;m honing my skills in frontend and backend development while exploring innovative solutions to the real-world challenges. As a motivated learner, I&apos;m committed to continuous growth, collaboration and delivering high quality solutions.</label>
       <div className="flex items-center mt-8 md:mt-10">
-        <Button className="max-w-32 h-12 mr-5" variant="primary" onClick={() => window.open("https://drive.google.com/file/d/165qw_bsP5Y_5CPPlSHsbWRN-lgnxj2OT/view?usp=sharing", "_blank")}>
+        <Button className="max-w-32 h-12 mr-5" variant="primary" onClick={() => window.open("https://drive.google.com/file/d/1mXGNMQgyisUgdpKZEMZyc9i0Ou0k11zm/view?usp=sharing", "_blank")}>
           View Resume
         </Button>
         <div className="hidden md:flex lg:flex ms-6 space-x-6">
