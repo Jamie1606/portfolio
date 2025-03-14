@@ -48,10 +48,10 @@ export default function NavBar() {
 
   return (
     <motion.div
-      initial={{ y: -100, opacity: 0 }} // Start hidden
+      initial={{ y: 0, opacity: 1 }}
       animate={{ y: isAtTop ? 0 : isVisible ? 0 : -100, opacity: isAtTop || isVisible ? 1 : 0 }}
       transition={{ duration: 0.3, ease: "easeInOut" }}
-      className={cn("px-6 flex items-center justify-between md:px-12 lg:px-28 mt-8 transition-all duration-300", !isAtTop && "fixed top-0 left-0 w-full mt-0 bg-[#F5F5F5] shadow-lg z-50 py-3")}
+      className={cn("px-6 flex items-center justify-between md:px-12 lg:px-28 fixed top-0 left-0 w-full z-50 py-4 bg-[#F5F5F5]", !isAtTop && " shadow-md")}
     >
       <Link href="/" className="relative flex items-center justify-center rounded-lg bg-[#2A71D0] transition-all duration-200 hover:bg-transparent overflow-hidden hover-animation lg:hover:before:w-[25px]">
         <div className="relative cursor-pointer w-full z-10 m-0.5 px-3 py-1 rounded-lg text-[#2A71D0] font-semibold text-xl bg-[#F5F5F5] lg:text-[1.4rem] lg:px-4 lg:py-2">Z</div>

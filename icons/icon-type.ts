@@ -3,4 +3,5 @@ export interface IconProps {
   height: number;
   fill?: string;
   className?: string;
+  title?: string;
 }
