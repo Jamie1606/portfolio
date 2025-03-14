@@ -5,13 +5,14 @@ import GitHubIcon from "@/icons/github";
 import GmailIcon from "@/icons/gmail";
 import LinkedInIcon from "@/icons/linkedin";
 import Link from "next/link";
+
 const Banner = () => {
   return (
     <div className="flex flex-col mt-32 w-full px-6 mx-auto xs:w-[90%] md:mt-48 md:w-[35rem] lg:w-[50rem] lg:px-0 lg:mt-56 xl:w-[60rem]">
       <label className="text-[#333333] font-medium mb-6 tracking-wide text-lg md:mb-8 lg:mb-8 uppercase">Hey there, I&apos;m</label>
       <label className="text-[#2A71D0] font-extrabold text-4xl md:text-5xl lg:text-6xl">Zay Yar Tun</label>
       <label className="text-[#000000] mt-4 max-w-full text-xl font-medium md:mt-6 md:max-w-[30rem] lg:max-w-[50rem] lg:text-2xl lg:mt-8">Web & Mobile Developer | Full-Stack Enthusiast | Problem Solver</label>
-      <label className="text-justify w-full text-[15px] text-[#333333] mt-10 max-w-[60rem] md:text-lg">
+      <label className="w-full text-[15px] text-[#333333] mt-10 max-w-[60rem] md:text-lg">
         Passionate <span className="font-bold">Web & Mobile Developer</span> with expertise in <span className="font-bold">React, Next.js, React Native and Node.js.</span> I love building intuitive digital experiences and solving real-world problems through technology. Currently seeking <span className="font-bold">Software Engineer & Web Developer roles</span> to contribute innovative solutions in a fast-paced environment.
       </label>
       <div className="flex items-center mt-8 md:mt-10">
