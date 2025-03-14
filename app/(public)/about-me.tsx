@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const AboutMe = () => {
   return (
-    <motion.div initial={{ y: -30, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.3, delay: 0.5 }} className="pt-32 lg:pt-36">
+    <motion.div initial={{ y: -30, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.3, delay: 0.5 }} className="pt-16 lg:pt-36">
       <div id="about" className="flex flex-col w-full mx-auto max-w-[1100px] px-8">
         <label className="text-2xl mb-8 text-center text-[#0A66C2] font-bold sm:mb-12 md:text-3xl">👦 About Me</label>
         <div className="flex flex-col w-[100%] md:w-[90%] mx-auto">
