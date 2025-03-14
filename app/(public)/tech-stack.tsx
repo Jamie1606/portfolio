@@ -34,7 +34,7 @@ const techStackArr = [
 
 const TechStack = () => {
   return (
-    <div id="skill" className="flex flex-col mt-20 w-full max-w-[1200px] mx-auto px-8 lg:mt-36">
+    <div id="skill" className="flex flex-col mt-20 w-full max-w-[1200px] mx-auto px-3 md:px-8 lg:mt-36">
       <label className="text-2xl mb-4 text-center text-[#0A66C2] font-bold sm:mb-12 md:text-3xl">🚀 Skills</label>
       <div className="flex justify-center ms-2 pt-4 items-center w-full flex-wrap max-h-fit overflow-hidden">
         {techStackArr.map((tech, index) => (
