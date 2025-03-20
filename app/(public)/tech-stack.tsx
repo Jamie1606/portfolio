@@ -43,7 +43,7 @@ const TechStack = () => {
       </motion.div>
       <div className="flex justify-center pt-4 items-center w-full flex-wrap max-h-fit gap-2 overflow-hidden">
         {techStackArr.map((tech, index) => (
-          <motion.div key={index} initial={{ y: -30, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.3, delay: 0.8 + index * 0.2 }}>
+          <motion.div key={index} initial={{ y: -30, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.3, delay: 0.8 + index * 0.1 }}>
             <div className="relative bg-transparent overflow-hidden rounded-xl flex justify-center items-center hover-animation-two">
               <div className="relative flex justify-center items-center flex-col z-10 space-y-2 w-[90px] h-[90px] bg-white m-0.5 rounded-lg cursor-pointer">
                 <div className="text-4xl hover:cursor-pointer">{tech.icon}</div>

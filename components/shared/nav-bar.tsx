@@ -17,7 +17,15 @@ export default function NavBar() {
   const scrollTo = (elementID: string) => {
     setSheetOpen(false);
     setTimeout(() => {
-      document.getElementById(elementID)?.scrollIntoView();
+      const element = document.getElementById(elementID);
+      if (element) {
+        const offset = 100; // Adjust this value to scroll slightly above
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({
+          top: elementPosition - offset, // Scroll slightly above
+          behavior: "smooth",
+        });
+      }
     }, 300);
   };
 
@@ -88,29 +96,23 @@ export default function NavBar() {
           <NavigationMenuList className="flex justify-end items-center gap-x-8 text-[0.9rem] xl:text-[1rem]">
             <NavigationMenuItem>
               <motion.div initial={{ y: -80 }} animate={{ y: 0 }} transition={{ duration: 0.3, delay: 0.4 }}>
-                <Link href="#about" legacyBehavior passHref>
-                  <NavigationMenuLink className="text-[#333333] hover:text-[#2A71D0] hover:font-medium transition-all duration-200 hover:underline hover:underline-offset-8">
-                    <span className="text-[#2A71D0] font-semibold">01.</span> About
-                  </NavigationMenuLink>
-                </Link>
+                <NavigationMenuLink className="text-[#333333] hover:text-[#2A71D0] cursor-pointer hover:font-medium transition-all duration-200 hover:underline hover:underline-offset-8" onClick={() => scrollTo("about")}>
+                  <span className="text-[#2A71D0] font-semibold">01.</span> About
+                </NavigationMenuLink>
               </motion.div>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <motion.div initial={{ y: -80 }} animate={{ y: 0 }} transition={{ duration: 0.3, delay: 0.6 }}>
-                <Link href="#skill" legacyBehavior passHref>
-                  <NavigationMenuLink className="text-[#333333] hover:text-[#2A71D0] hover:font-medium transition-all duration-200 hover:underline hover:underline-offset-8">
-                    <span className="text-[#2A71D0] font-semibold">02.</span> Skill
-                  </NavigationMenuLink>
-                </Link>
+                <NavigationMenuLink className="text-[#333333] hover:text-[#2A71D0] cursor-pointer hover:font-medium transition-all duration-200 hover:underline hover:underline-offset-8" onClick={() => scrollTo("skill")}>
+                  <span className="text-[#2A71D0] font-semibold">02.</span> Skill
+                </NavigationMenuLink>
               </motion.div>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <motion.div initial={{ y: -80 }} animate={{ y: 0 }} transition={{ duration: 0.3, delay: 0.8 }}>
-                <Link href="#project" legacyBehavior passHref>
-                  <NavigationMenuLink className="text-[#333333] hover:text-[#2A71D0] hover:font-medium transition-all duration-200 hover:underline hover:underline-offset-8">
-                    <span className="text-[#2A71D0] font-semibold">03.</span> Project
-                  </NavigationMenuLink>
-                </Link>
+                <NavigationMenuLink className="text-[#333333] hover:text-[#2A71D0] cursor-pointer hover:font-medium transition-all duration-200 hover:underline hover:underline-offset-8" onClick={() => scrollTo("project")}>
+                  <span className="text-[#2A71D0] font-semibold">03.</span> Project
+                </NavigationMenuLink>
               </motion.div>
             </NavigationMenuItem>
             <NavigationMenuItem>

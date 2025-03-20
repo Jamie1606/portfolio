@@ -28,7 +28,7 @@ const Project = () => {
       </motion.div>
       <div className="w-full gap-y-5 flex justify-center gap-x-12 flex-wrap md:gap-y-8 md:gap-x-8 max-w-[1400px]">
         {projects.map((item, index) => (
-          <motion.div key={index} initial={{ y: -30, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.3, delay: 0.8 + index * 0.2 }}>
+          <motion.div key={index} initial={{ y: -30, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.3, delay: 0.8 + index * 0.1 }}>
             <ProjectCard {...item} />
           </motion.div>
         ))}

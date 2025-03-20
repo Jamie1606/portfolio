@@ -15,7 +15,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ title, description, image, technologies, githubLink, demoLink }: ProjectCardProps) => {
   return (
-    <Card className="w-[85%] h-full rounded-xl shadow-md xs:w-[380px] md:w-[350px] lg:w-[400px]">
+    <Card className="w-[85%] h-full rounded-xl mx-auto shadow-md xs:w-[380px] md:w-[350px] lg:w-[400px]">
       <CardHeader>
         {image ? (
           <div className="w-full relative h-[190px] overflow-hidden">
