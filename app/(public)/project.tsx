@@ -1,5 +1,8 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import ProjectCard from "./project-card";
+import { motion } from "framer-motion";
 
 const projects = [
   { title: "Portfolio", description: "This is the portfolio website created by me. I implemented this by using Next.js for static export with GitHub Pages.", image: "/projects/portfolio.png", technologies: ["next.js", "ci/cd pipeline", "cloudflare", "github pages", "shadcn ui", "tailwind css"], githubLink: "https://github.com/Jamie1606/portfolio", demoLink: "https://www.zayyartun.com" },
@@ -20,10 +23,14 @@ const projects = [
 const Project = () => {
   return (
     <div id="project" className="mt-20 flex flex-col lg:mt-36 justify-center w-full">
-      <label className="text-2xl mb-8 text-center text-[#0A66C2] font-bold sm:mb-12 md:text-3xl">📋 Latest Projects</label>
+      <motion.div initial={{ y: -30, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.3, delay: 0.5 }} className="mb-8 mx-auto sm:mb-12">
+        <label className="text-2xl text-center text-[#0A66C2] font-bold md:text-3xl">📋 Latest Projects</label>
+      </motion.div>
       <div className="w-full gap-y-5 flex justify-center gap-x-12 flex-wrap md:gap-y-8 md:gap-x-8 max-w-[1400px]">
         {projects.map((item, index) => (
-          <ProjectCard key={index} {...item} />
+          <motion.div initial={{ y: -30, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.3, delay: 0.8 + index * 0.2 }}>
+            <ProjectCard key={index} {...item} />
+          </motion.div>
         ))}
       </div>
       {/* <Button className="mt-8 w-[150px] mx-auto">Show More</Button> */}
