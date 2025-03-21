@@ -95,28 +95,28 @@ export default function NavBar() {
         <NavigationMenu>
           <NavigationMenuList className="flex justify-end items-center gap-x-8 text-[0.9rem] xl:text-[1rem]">
             <NavigationMenuItem>
-              <motion.div initial={{ y: -80 }} animate={{ y: 0 }} transition={{ duration: 0.3, delay: 0.4 }}>
+              <motion.div initial={{ y: -80 }} animate={{ y: 0 }} transition={{ duration: 0.3, delay: 0.3 }}>
                 <NavigationMenuLink className="text-[#333333] hover:text-[#2A71D0] cursor-pointer hover:font-medium transition-all duration-200 hover:underline hover:underline-offset-8" onClick={() => scrollTo("about")}>
                   <span className="text-[#2A71D0] font-semibold">01.</span> About
                 </NavigationMenuLink>
               </motion.div>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <motion.div initial={{ y: -80 }} animate={{ y: 0 }} transition={{ duration: 0.3, delay: 0.6 }}>
+              <motion.div initial={{ y: -80 }} animate={{ y: 0 }} transition={{ duration: 0.3, delay: 0.4 }}>
                 <NavigationMenuLink className="text-[#333333] hover:text-[#2A71D0] cursor-pointer hover:font-medium transition-all duration-200 hover:underline hover:underline-offset-8" onClick={() => scrollTo("skill")}>
                   <span className="text-[#2A71D0] font-semibold">02.</span> Skill
                 </NavigationMenuLink>
               </motion.div>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <motion.div initial={{ y: -80 }} animate={{ y: 0 }} transition={{ duration: 0.3, delay: 0.8 }}>
+              <motion.div initial={{ y: -80 }} animate={{ y: 0 }} transition={{ duration: 0.3, delay: 0.5 }}>
                 <NavigationMenuLink className="text-[#333333] hover:text-[#2A71D0] cursor-pointer hover:font-medium transition-all duration-200 hover:underline hover:underline-offset-8" onClick={() => scrollTo("project")}>
                   <span className="text-[#2A71D0] font-semibold">03.</span> Project
                 </NavigationMenuLink>
               </motion.div>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <motion.div initial={{ y: -80 }} animate={{ y: 0 }} transition={{ duration: 0.3, delay: 1 }}>
+              <motion.div initial={{ y: -80 }} animate={{ y: 0 }} transition={{ duration: 0.3, delay: 0.6 }}>
                 <Button variant="primary" onClick={() => window.open("https://drive.google.com/file/d/1mXGNMQgyisUgdpKZEMZyc9i0Ou0k11zm/view?usp=sharing", "_blank")}>
                   Resume
                 </Button>

@@ -38,12 +38,12 @@ const techStackArr = [
 const TechStack = () => {
   return (
     <div id="skill" className="flex flex-col w-full max-w-[1200px] mx-auto px-3 mt-20 md:px-8 lg:mt-36">
-      <motion.div initial={{ y: -30, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.3, delay: 0.5 }} className="mb-4 mx-auto">
+      <motion.div initial={{ y: -30, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.3, delay: 0.3 }} className="mb-4 mx-auto">
         <label className="text-2xl text-center text-[#0A66C2] font-bold sm:mb-12 md:text-3xl">🚀 Skills</label>
       </motion.div>
       <div className="flex justify-center pt-4 items-center w-full flex-wrap max-h-fit gap-2 overflow-hidden">
         {techStackArr.map((tech, index) => (
-          <motion.div key={index} initial={{ y: -30, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.3, delay: 0.8 + index * 0.1 }}>
+          <motion.div key={index} initial={{ y: -30, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.3, delay: 0.3 + index * 0.1 }}>
             <div className="relative bg-transparent overflow-hidden rounded-xl flex justify-center items-center hover-animation-two">
               <div className="relative flex justify-center items-center flex-col z-10 space-y-2 w-[90px] h-[90px] bg-white m-0.5 rounded-lg cursor-pointer">
                 <div className="text-4xl hover:cursor-pointer">{tech.icon}</div>
